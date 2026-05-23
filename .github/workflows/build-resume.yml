@@ -46,12 +46,12 @@ jobs:
           
       - name: Create GitHub Release
         env:
-          GITHUB_TOKEN: $${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Use run_id and run_attempt for a unique tag
-          TAG="build-$${{ github.run_id }}-$${{ github.run_attempt }}"
+          TAG="build-${{ github.run_id }}-${{ github.run_attempt }}"
           
           echo "Creating release $TAG..."
           gh release create "$TAG" resume.pdf \
-            --title "Resume Build $${{ github.run_id }}" \
+            --title "Resume Build ${{ github.run_id }}" \
             --notes "Automated PDF build."
