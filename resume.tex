@@ -1,0 +1,120 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[margin=0.75in]{geometry}
+\usepackage{lmodern}
+\usepackage[explicit]{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+
+% Define colors
+\definecolor{primary}{HTML}{2A5A8A} % A professional slate blue
+\definecolor{text}{HTML}{222222}    % Off-black for better readability
+
+% Disable page numbers
+\pagestyle{empty}
+\color{text}
+
+% Section formatting
+\titleformat{\section}
+  {\large\bfseries\color{primary}}
+  {}
+  {0em}
+  {\MakeUppercase{#1}}
+  [\vspace{-0.5em}{\color{primary}\rule{\textwidth}{0.5pt}}]
+
+% Spacing
+\titlespacing*{\section}{0pt}{1.5ex plus 1ex minus .2ex}{1ex plus .2ex}
+
+% List formatting
+\setlist[itemize]{
+  leftmargin=1.5em,
+  itemsep=2pt,
+  parsep=0pt,
+  topsep=2pt
+}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\huge \textbf{\textcolor{primary}{Ragul Balaji Ravichandran}}} \\ \vspace{0.5em}
+    \textbf{Data (Platform) Engineer} \\ \vspace{0.2em}
+    +(91) 9488712377 $\vert$ Bangalore, IN $\vert$ \href{mailto:ragulbalaji@hotmail.com}{ragulbalaji@hotmail.com} $\vert$ \href{https://linkedin.com/in/rglbr}{linkedin.com/in/rglbr} $\vert$ \href{https://github.com/rglbr}{github.com/rglbr}
+\end{center}
+
+\vspace{0.5em}
+
+% Summary
+\noindent
+Data Engineer and Software Developer with 12 years of experience specializing in the design, development, and migration of scalable data platforms. Expert in cloud platform modernization and leading the development of modern, open-source data infrastructure. Proven ability to reduce operational costs and deliver high-quality data enablement. Top Skills: Spark, Kubernetes, Snowflake. Seeking a challenging Senior Data Platform Engineer role.
+
+% Experience
+\section*{Professional Experience}
+
+\noindent
+\textbf{Data Engineer at Booking Holdings (Flights)} \hfill \textbf{2023 -- Present}
+\begin{itemize}
+    \item Driving architecture and implementation of the enterprise data platform migration from Hadoop to a cloud-native Data Lake and Data Warehouse stack, working within a 10-person data team (7 data engineers) and partnering with 15+ data scientists, analysts, and ML engineers.
+    \item Designing scalable data models using dbt, applying both Data Vault 2.0 (Hubs, Links, Satellites) and Dimensional Modeling patterns to ensure data integrity and analytical flexibility across the Flights business unit.
+    \item Building and optimizing $\sim$80 Apache Spark workflows and Apache Airflow DAGs processing hundreds of petabytes of data, improving data delivery latency and overall platform throughput.
+    \item Enabling downstream analytics by delivering high-quality, governed datasets that power critical business reports, executive dashboards, and ML model training pipelines.
+\end{itemize}
+
+\vspace{0.5em}
+
+\noindent
+\textbf{Lead Data Engineer at XpressBees} \hfill \textbf{2022 -- 2023}
+\begin{itemize}
+    \item Led a 7-member Data Platform team in designing and building a greenfield data platform entirely on open-source technologies, establishing the company's first scalable, production-grade data infrastructure.
+    \item Executed end-to-end migration of $\sim$40 legacy data pipelines to the new platform with zero downtime, ensuring uninterrupted business intelligence and reporting continuity.
+    \item Defined platform standards for data ingestion, transformation, and orchestration, creating a repeatable framework adopted across engineering teams.
+\end{itemize}
+
+\vspace{0.5em}
+
+\noindent
+\textbf{Specialist Software Engineer at Societe Generale} \hfill \textbf{2020 -- 2022}
+\begin{itemize}
+    \item Designed and built robust, compliant data pipelines for the Compliance Activity, Risk Monitoring \& Analysis (CARMA) data lake, supporting regulatory and risk analysis workloads.
+    \item Ensured data integrity and accessibility across complex, high-stakes datasets used by compliance and risk teams for regulatory reporting and audit readiness.
+    \item Implemented data quality checks and monitoring to maintain pipeline reliability across production environments.
+\end{itemize}
+
+\vspace{0.5em}
+
+\noindent
+\textbf{Specialist Software Analyst at Agilysys} \hfill \textbf{2017 -- 2020}
+\begin{itemize}
+    \item Played a key role in architecting a multi-tenant product platform modernization effort, achieving $\sim$70\% reduction in operational costs by streamlining release management and infrastructure.
+    \item Led infrastructure improvements including database isolation --- migrating from co-located multi-database servers to dedicated single-database instances --- significantly improving system load, stability, and performance.
+    \item Built and maintained data pipelines and reporting infrastructure to support product analytics, operational dashboards, and business decision-making.
+    \item Collaborated with cross-functional teams to define data requirements and deliver governed, reliable datasets for internal stakeholders.
+\end{itemize}
+
+\vspace{0.5em}
+
+\noindent
+\textbf{Senior Systems Engineer at Infosys} \hfill \textbf{2014 -- 2017}
+\begin{itemize}
+    \item Developed backend services for a large-scale e-commerce platform, focusing on web service design, API development, and middleware integration.
+    \item Contributed to system architecture and performance optimization initiatives to support high-traffic production workloads.
+\end{itemize}
+
+% Education
+\section*{Education}
+\noindent
+\textbf{Bachelor of Engineering} \hfill \textbf{2010 -- 2014} \\
+RMK Engineering College
+
+% Skills
+\section*{Skills}
+\begin{itemize}[label={}, leftmargin=0pt]
+    \item \textbf{Data Processing:} Apache Spark, Apache Kafka, Debezium
+    \item \textbf{Data Warehousing:} Snowflake, dbt, Data Vault 2.0, Dimensional Modeling
+    \item \textbf{Orchestration \& Infra:} Apache Airflow, Kubernetes, Docker
+    \item \textbf{Cloud Platforms:} AWS
+    \item \textbf{Programming:} Python, Java, SQL
+\end{itemize}
+
+\end{document}
